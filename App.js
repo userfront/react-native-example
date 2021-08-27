@@ -1,12 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from "react";
+import Userfront from "@userfront/core";
+import { View, StyleSheet } from "react-native";
+
+Userfront.init("demo1234", { domain: "com.myapp.example" });
+
+// You can import from local files
+import SignupForm from "./components/Signup";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <SignupForm />
     </View>
   );
 }
@@ -14,8 +18,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop: 10,
+    backgroundColor: "#ecf0f1",
+    padding: 8,
   },
 });
