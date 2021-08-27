@@ -4,7 +4,6 @@ import { View, StyleSheet } from "react-native";
 
 Userfront.init("demo1234", { domain: "com.myapp.example" });
 
-// You can import from local files
 import SignupForm from "./components/Signup";
 
 export default function App() {
