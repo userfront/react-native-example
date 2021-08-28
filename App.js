@@ -2,7 +2,7 @@ import * as React from "react";
 import Userfront from "@userfront/core";
 import { View, StyleSheet } from "react-native";
 
-Userfront.init("demo1234", { domain: "com.myapp.example" });
+Userfront.init("demo1234", { domain: "example.com" });
 
 import SignupForm from "./components/Signup";
 

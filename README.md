@@ -22,5 +22,5 @@ npm start
 Add your account details in `App.js`
 
 ```js
-Userfront.init("demo1234", { domain: "com.myapp.example" });
+Userfront.init("demo1234", { domain: "example.com" });
 ```
